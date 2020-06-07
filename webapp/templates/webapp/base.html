@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +18,11 @@
     />
 
     <!-- CSS link -->
-    <link href="static/webapp/style.css" rel="stylesheet" />
+    <link
+      href="{% static 'webapp/css/style.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <title>Matrix ingatlan</title>
   </head>
@@ -26,9 +31,8 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          {% load static %}
           <img
-            src="{% static 'webapp/logo.jpg' %}"
+            src="{% static 'webapp/images/logo.jpg' %}"
             alt="matrix logo"
             height="50"
             width="50"
@@ -65,6 +69,10 @@
       </div>
     </nav>
 
+    <!-- Footer -->
+    <footer id="contacts">
+      <div class="container-fluid padding"></div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

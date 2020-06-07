@@ -1,4 +1,10 @@
 .idea/
+<<<<<<< HEAD
 .vscode/
 webapp/__pycache__/
 matrix_project/__pycache__/
+=======
+matrix_project/__pycache__/
+webapp/__pycache__
+.vscode
+>>>>>>> base_features
