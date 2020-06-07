@@ -1,1 +1,4 @@
 .idea/
+matrix_project/__pycache__/
+webapp/__pycache__
+.vscode
