@@ -73,15 +73,11 @@
     <footer id="contacts">
       <div class="container-fluid padding">
         <div class="row text-center">
-          <div class="col-md-6">
-            <img
-              src="{% static 'webapp/images/matrix_ingatlan_logo.jpg' %}"
-              height="60"
-              width="140"
-            />
+          <div class="col-md-6" id="footer_logo">
+            <span>Matrix Ingatlan</span>
           </div>
-          <div class="col-md-6">
-            <p>Kövess minket:</p>
+          <div class="col-md-6" id="facebook">
+            Kövess minket: <a href="#"><i class="fab fa-facebook"></i></a>
           </div>
           <div class="col-md-4">
             <p>9400 Sopron</p>
@@ -93,14 +89,17 @@
             <p>matrixingatlan@freemail.hu</p>
           </div>
           <div class="col-md-4">
-            <p>Kö</p>
+            <p>Irodánk</p>
           </div>
           <div class="col-12">
             <hr class="light-100" />
-            <h5>&copy; 2020 Matrix Ingatlan</h5>
+            <h5>&copy; 2020 <span>Matrix Ingatlan</span></h5>
           </div>
           <div class="col-md-6">
             <a href="#">Adatkezelési szabályzat</a>
+          </div>
+          <div class="col-md-6">
+            <a href="#">Jogi nyilatkozat</a>
           </div>
         </div>
       </div>

@@ -11,8 +11,29 @@ body {
 #contacts {
   background-color: #00b386;
   color: white;
+  font-size: 14 px;
+  font-weight: 400;
 }
 
 #contacts a {
   color: blue;
+}
+
+h5 span {
+  font-weight: 500;
+}
+
+#footer_logo {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left: 2rem;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+#facebook {
+  text-align: right;
+  padding-right: 4rem;
+  padding-top: 1rem;
 }
