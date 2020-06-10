@@ -9,5 +9,10 @@ body {
 }
 
 #contacts {
+  background-color: #00b386;
   color: white;
+}
+
+#contacts a {
+  color: blue;
 }
