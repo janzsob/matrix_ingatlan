@@ -37,3 +37,13 @@ h5 span {
   padding-right: 4rem;
   padding-top: 1rem;
 }
+
+.category-pic {
+  height: 250px;
+  background-image: url("/static/webapp/images/house.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  margin: 1rem;
+}
