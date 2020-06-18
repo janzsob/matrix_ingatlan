@@ -1,18 +1,71 @@
 {% extends "webapp/base.html" %} {% load static %} {% block content %}
-
-<h1>Homepage</h1>
-
-<!-- Categories-->
-<div class="row">
-  <div class="col-md-4 category-pic">
-    <a href="#"><h3>Házak</h3></a>
+<div class="container-fluid">
+  <!-- Categories-->
+  <div class="container-fluid" style="width: 95%;">
+    <h1>Kategóriák</h1>
+    <div class="row">
+      <div class="col-md-4 category-pic">
+        <figure class="figure">
+          <img
+            src="{% static 'webapp/images/house.jpg' %}"
+            class="figure-img img-fluid rounded"
+            alt="house"
+          />
+          <a href="#"><figcaption class="figure-caption">Házak</figcaption></a>
+        </figure>
+      </div>
+      <div class="col-md-4 category-pic">
+        <figure class="figure">
+          <img
+            src="{% static 'webapp/images/flat.jpg' %}"
+            class="figure-img img-fluid rounded"
+            alt="house"
+          />
+          <a href="#"
+            ><figcaption class="figure-caption">Lakások</figcaption></a
+          >
+        </figure>
+      </div>
+      <div class="col-md-4 category-pic">
+        <figure class="figure">
+          <img
+            src="{% static 'webapp/images/garden.jpg' %}"
+            class="figure-img img-fluid rounded"
+            alt="house"
+          />
+          <a href="#"><figcaption class="figure-caption">Telkek</figcaption></a>
+        </figure>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4 category-pic">
-    <a href=">"><h3>Lakások</h3></a>
-  </div>
-  <div class="col-md-4 category-pic">
-    <a href="#"><h3>Kertek</h3></a>
+  <hr class="b-side" />
+  <div class="container-fluid" style="width: 73%;">
+    <div class="row">
+      <div class="col-md-6 category-pic">
+        <figure class="figure">
+          <img
+            src="{% static 'webapp/images/house.jpg' %}"
+            class="figure-img img-fluid rounded"
+            alt="house"
+          />
+          <a href="#"
+            ><figcaption class="figure-caption">Üzlethelyiségek</figcaption></a
+          >
+        </figure>
+      </div>
+      <div class="col-md-6 category-pic">
+        <figure class="figure">
+          <img
+            src="{% static 'webapp/images/flat.jpg' %}"
+            class="figure-img img-fluid rounded"
+            alt="house"
+          />
+          <a href="#"
+            ><figcaption class="figure-caption">Garázsok</figcaption></a
+          >
+        </figure>
+      </div>
+    </div>
   </div>
 </div>
-<br />
 {% endblock content %}
