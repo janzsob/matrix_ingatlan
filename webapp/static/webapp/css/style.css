@@ -37,3 +37,31 @@ h5 span {
   padding-right: 4rem;
   padding-top: 1rem;
 }
+
+.figure img {
+  height: 210px;
+  width: 100%;
+}
+
+.figure a {
+  text-decoration: none;
+}
+
+.figure figcaption {
+  font-size: 17px;
+}
+.figure figcaption:hover {
+  color: black;
+  font-weight: bold;
+}
+
+hr.b-side {
+  color: black;
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row {
+  padding-top: 15px;
+}
