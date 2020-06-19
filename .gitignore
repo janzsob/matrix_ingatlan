@@ -8,3 +8,4 @@ matrix_project/__pycache__/
 webapp/__pycache__
 .vscode
 >>>>>>> base_features
+db.sqlite3
