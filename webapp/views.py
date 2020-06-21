@@ -8,3 +8,7 @@ def index(request):
 
 def home(request):
     return render(request, "webapp/home.html")
+
+
+def ingatlanok(request):
+    return render(request, "webapp/ingatlanok.html")
