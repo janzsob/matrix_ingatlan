@@ -30,7 +30,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{% url 'homepage' %}">
           <img
             src="{% static 'webapp/images/logo.jpg' %}"
             alt="matrix logo"
@@ -57,7 +57,9 @@
             <a class="nav-link" href="{% url 'ingatlanok' %}">Ingatlanok</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Szolgáltatások</a>
+            <a class="nav-link" href="{% url 'szolgaltatasok' %}"
+              >Szolgáltatások</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Rólunk</a>

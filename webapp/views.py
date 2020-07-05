@@ -12,3 +12,7 @@ def home(request):
 
 def ingatlanok(request):
     return render(request, "webapp/ingatlanok.html")
+
+
+def szolgaltatasok(request):
+    return render(request, "webapp/szolgaltatasok.html")
