@@ -66,25 +66,35 @@ hr.b-side {
   padding-top: 15px;
 }
 
-/* Ingatlanok custom css */
-.prop-box {
-  background-color: #fff;
+/* Ingatlanok Custom CSS */
+.card-body {
+  position: relative;
+  padding: 10px;
+}
+
+.col-md-3 {
+  padding: 15px;
+}
+
+.card {
+  border-radius: 5px;
+  height: 325px;
   box-shadow: rgb(204, 204, 204) 0 0 16px;
-  border-radius: 4px;
-  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
-  margin-bottom: 1rem;
 }
 
-.prop-box p {
-  margin-bottom: 8px;
+.card-body a {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #00b386;
 }
 
-.prop-box h6 {
-  padding-top: 5px;
+.card-body h6 {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
 }
 
-img.cover {
-  width: 100%;
+.card-img-top {
   height: 180px;
-  box-shadow: -1px -3px 5px -2px rgb(204, 204, 204);
 }

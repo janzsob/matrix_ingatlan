@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Ingatlan
 
 
 def index(request):
@@ -11,7 +12,9 @@ def home(request):
 
 
 def ingatlanok(request):
-    return render(request, "webapp/ingatlanok.html")
+    properties = Ingatlan.objects.all()
+    context = {"properties": properties}
+    return render(request, "webapp/ingatlanok.html", context)
 
 
 def szolgaltatasok(request):

@@ -15,6 +15,7 @@ class Ingatlan(models.Model):
     price = models.IntegerField("Irányár")
     types = models.CharField("Típus", max_length=30,
                              choices=choices.ingatlan_types, help_text="Ingatlan típus")
+    city = models.CharField("Település", max_length=35)
     size = models.IntegerField("Alapterület(m²)", blank=True, null=True)
     rooms = models.DecimalField(
         "Szobák száma", max_digits=5, decimal_places=1, blank=True, null=True)

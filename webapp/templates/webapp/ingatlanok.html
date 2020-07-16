@@ -1,67 +1,33 @@
 {% extends "webapp/base.html" %} {% load static %} {% block content %}
 <div class="container-fluid" style="width: 95%;">
-  <div class="row ingatlanok-row">
+  <div class="row">
+    {% for prop in properties %} {% if prop.publish %}
     <div class="col-md-3">
-      <img
-        class="cover"
-        src="{% static 'webapp/images/home.jpg' %}"
-        alt="home"
-      />
-      <div class="prop-box">
-        <h5><strong>28.000.000 Ft</strong></h5>
-        <p>Lakás | 2 szoba | 1 fürdőszoba | 52 m²</p>
-        <h6 style="display: inline-block;"><strong>Sopron</strong></h6>
-        <a class="btn btn-outline-secondary" href="#" style="float: right;"
-          >Részletek</a
-        >
+      <div class="card">
+        <img src="{{prop.cover_photo.url}}" class="card-img-top" alt="home" />
+        <div class="card-body">
+          <h5 class="card-tittle"><strong>{{ prop.price }} Ft</strong></h5>
+          <p class="card-text">
+            <!--There are size and rooms (and types) attributes, as well.-->
+            {% if prop.size and prop.rooms %} {{prop.types}} | {{prop.rooms}}
+            szoba | {{prop.size}} m²
+            <!--There is only size (and types) attribute.-->
+            {% elif prop.size %} {{prop.types}} | {{prop.size}} m²
+            <!--There is only rooms (and types) attribute.-->
+            {% elif prop.rooms %} {{prop.types}} |{{prop.rooms}} szoba {%endif%}
+          </p>
+          <h6 style="display: inline-block;">
+            <strong>{{ prop.city }}</strong>
+          </h6>
+          <a class="btn btn-outline-secondary" href="#" style="float: right;"
+            >Részletek</a
+          >
+        </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <img
-        class="cover"
-        src="{% static 'webapp/images/home.jpg' %}"
-        alt="home"
-      />
-      <div class="prop-box">
-        <h5><strong>28.000.000 Ft</strong></h5>
-        <p>Lakás | 2 szoba | 1 fürdőszoba | 52 m²</p>
-        <h6 style="display: inline-block;"><strong>Sopron</strong></h6>
-        <a class="btn btn-outline-secondary" href="#" style="float: right;"
-          >Részletek</a
-        >
-      </div>
-    </div>
-    <div class="col-md-3">
-      <img
-        class="cover"
-        src="{% static 'webapp/images/home.jpg' %}"
-        alt="home"
-      />
-      <div class="prop-box">
-        <h5><strong>28.000.000 Ft</strong></h5>
-        <p>Lakás | 2 szoba | 1 fürdőszoba | 52 m²</p>
-        <h6 style="display: inline-block;"><strong>Sopron</strong></h6>
-        <a class="btn btn-outline-secondary" href="#" style="float: right;"
-          >Részletek</a
-        >
-      </div>
-    </div>
-    <div class="col-md-3">
-      <img
-        class="cover"
-        src="{% static 'webapp/images/home.jpg' %}"
-        alt="home"
-      />
-      <div class="prop-box">
-        <h5><strong>28.000.000 Ft</strong></h5>
-        <p>Lakás | 2 szoba | 1 fürdőszoba | 52 m²</p>
-        <h6 style="display: inline-block;"><strong>Sopron</strong></h6>
-        <a class="btn btn-outline-secondary" href="#" style="float: right;"
-          >Részletek</a
-        >
-      </div>
-    </div>
+    {% endif %} {% endfor %}
   </div>
+  <br />
 </div>
 
-{% endblock content %}
+{%endblock content %}
